@@ -6,6 +6,9 @@ left_check = keyboard_check(ord("A")) or keyboard_check(vk_left);
 down_check = keyboard_check(ord("S")) or keyboard_check(vk_down);
 right_check = keyboard_check(ord("D")) or keyboard_check(vk_right);
 
+fart_check = keyboard_check_pressed(ord("F"));
+
+
 xinput =  right_check - left_check
 yinput = down_check - up_check
 
@@ -34,4 +37,9 @@ x += xspd;
 y += yspd;
 
 // oi adams.... meu nome é carlos.... você assiste................. (Bumda)
+
+// Fart
+if fart_check {
+	audio_play_sound(snd_fart, 0, false)
+}
 
