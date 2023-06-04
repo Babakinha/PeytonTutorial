@@ -4,10 +4,11 @@
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":13,"path":"folders/Scripts.yy",},
     {"name":"Sprites","order":12,"path":"folders/Sprites.yy",},
+    {"name":"boss","order":6,"path":"folders/Sprites/boss.yy",},
     {"name":"player","order":2,"path":"folders/Sprites/player.yy",},
     {"name":"tilesets","order":4,"path":"folders/Sprites/tilesets.yy",},
     {"name":"Tile Sets","order":14,"path":"folders/Tile Sets.yy",},
-    {"name":"boss","order":6,"path":"folders/Sprites/boss.yy",},
+    {"name":"Sounds","order":15,"path":"folders/Sounds.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
