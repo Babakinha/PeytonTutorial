@@ -33,3 +33,5 @@ if xspd == 0 and yspd == 0 {image_index = 0};
 x += xspd;
 y += yspd;
 
+// oi adams.... meu nome é carlos.... você assiste................. (Bumda)
+

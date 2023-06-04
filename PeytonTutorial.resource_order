@@ -7,10 +7,12 @@
     {"name":"player","order":2,"path":"folders/Sprites/player.yy",},
     {"name":"tilesets","order":4,"path":"folders/Sprites/tilesets.yy",},
     {"name":"Tile Sets","order":14,"path":"folders/Tile Sets.yy",},
+    {"name":"boss","order":6,"path":"folders/Sprites/boss.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"spr_player_right","order":3,"path":"sprites/spr_player_right/spr_player_right.yy",},
+    {"name":"obj_boss","order":2,"path":"objects/obj_boss/obj_boss.yy",},
     {"name":"spr_player_up","order":2,"path":"sprites/spr_player_up/spr_player_up.yy",},
     {"name":"spr_player_left","order":1,"path":"sprites/spr_player_left/spr_player_left.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
