@@ -1,45 +1,69 @@
-///@description Movement, animation and follow the player
+/// @description Movement, animation and follow the player
 
-if (active) {
+if active
+{
+	// Movement, facing
 	if (instance_exists(obj_player) == 1 && abs(point_distance(x, y, obj_player.x, obj_player.y)) >= 20)
 	{
-		// Run or walk depending on distance
-		if (abs(point_distance(x, y, obj_player.x, obj_player.y)) >= 40)
-		{
-			wspeed = (orig_wspeed * 2);
-			ispeed = (orig_ispeed * 2);
-			if (abs(point_distance(x, y, obj_player.x, obj_player.y)) >= 60)
-			{
-				wspeed = (orig_wspeed * 3);
-				ispeed = (orig_ispeed * 3);
-			}
-		}
-		else
+		// Get distance to player
+		mydist = abs(point_distance(x, y, obj_player.x, obj_player.y));
+		
+		// Walk or run depending on distance
+		if (mydist < 40)
 		{
 			wspeed = orig_wspeed;
 			ispeed = orig_ispeed;
 		}
+		else
+		{
+			wspeed = (orig_wspeed * round(mydist / 20));
+			ispeed = (orig_ispeed * round(mydist / 20));
+		}
 	
-		// Movement and animation
-		depth = -bbox_bottom;
-		direction = point_direction(x, y, obj_player.x, obj_player.y);
+		// Movement
 		speed = wspeed;
-		image_speed = ispeed;	
+		direction = point_direction(x, y, obj_player.x, obj_player.y);
+		
+		// Basic collision
+		if (place_meeting((x + hspeed), y, obj_wall) == 1)
+			hspeed = 0;
+		if (place_meeting(x, (y + vspeed), obj_wall) == 1)
+			vspeed = 0;
+			
+		// Animation
+		if (hspeed != 0 && vspeed != 0)
+		{
+			depth = -bbox_bottom;
+			image_speed = ispeed;
+			if (moving == 0)
+				image_index = 1;
+			moving = 1;
+		}
+		
+		// Facing
+		if (abs(x - obj_player.x) > abs(y - obj_player.y))
+		{
+			if (x > obj_player.x)
+				sprite_index = spr_boss_left;
+			else
+				sprite_index = spr_boss_right;
+		}
+		else
+		{
+			if (y > obj_player.y)
+				sprite_index = spr_boss_up;
+			else
+				sprite_index = spr_boss_down;
+		}
 	}
-	// Too close
-	else if (abs(point_distance(x, y, obj_player.x, obj_player.y)) < 20)
+	// Stop movement and animation if its too close or obj_player doesn't exists
+	else
 	{
-		// Stop movement and animation
 		x = round(x);
 		y = round(y);
 		speed = 0;
 		image_speed = 0;
 		image_index = 0;
+		moving = 0;
 	}
 }
-
-// Facing
-if (y > obj_player.y)
-	sprite_index = spr_boss_up;
-else
-	sprite_index = spr_boss_down;

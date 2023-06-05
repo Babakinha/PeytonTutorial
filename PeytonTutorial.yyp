@@ -25,7 +25,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.600.0.351",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
@@ -33,6 +33,7 @@
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"ts_test","path":"tilesets/ts_test/ts_test.yy",},},
+    {"id":{"name":"spr_boss_left","path":"sprites/spr_boss_left/spr_boss_left.yy",},},
     {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},},
     {"id":{"name":"spr_tileset_test","path":"sprites/spr_tileset_test/spr_tileset_test.yy",},},
     {"id":{"name":"obj_bed","path":"objects/obj_bed/obj_bed.yy",},},
@@ -44,6 +45,7 @@
     {"id":{"name":"snd_fart","path":"sounds/snd_fart/snd_fart.yy",},},
     {"id":{"name":"scr_direction_macros","path":"scripts/scr_direction_macros/scr_direction_macros.yy",},},
     {"id":{"name":"obj_plush","path":"objects/obj_plush/obj_plush.yy",},},
+    {"id":{"name":"spr_boss_right","path":"sprites/spr_boss_right/spr_boss_right.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"spr_boss_down","path":"sprites/spr_boss_down/spr_boss_down.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
