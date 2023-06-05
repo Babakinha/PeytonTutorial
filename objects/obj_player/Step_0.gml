@@ -1,7 +1,6 @@
 /// @description Movement, animations, and collisions
 
-// Movement, animations and collisions
-#region
+#region Movement, animations and collisions
 
 // Get inputs
 up_check = keyboard_check(ord("W")) or keyboard_check(vk_up);
@@ -20,6 +19,7 @@ if (run_check)
 	move_spd = (orig_move_spd * 2);
 else if !(run_check)
 	move_spd = orig_move_spd;
+
 xspd = (xinput * move_spd);
 yspd = (yinput * move_spd);
 
@@ -37,7 +37,7 @@ if xinput == 0 {
 	if yinput < 0 {face = UP};
 }
 sprite_index = sprite[face];
-image_speed = (1 * (run_check + 1));
+image_speed = run_check + 1;
 if xspd == 0 and yspd == 0 {image_index = 0};
 
 // Apply

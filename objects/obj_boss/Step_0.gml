@@ -1,8 +1,8 @@
+///@description Movement, animation and follow the player
 
-// Movement, animation and run
 if (instance_exists(obj_player) == 1 && abs(point_distance(x, y, obj_player.x, obj_player.y)) >= 20)
 {
-	// Run
+	// Run or walk depending on distance
 	if (abs(point_distance(x, y, obj_player.x, obj_player.y)) >= 40)
 	{
 		wspeed = (orig_wspeed * 2);
@@ -18,12 +18,14 @@ if (instance_exists(obj_player) == 1 && abs(point_distance(x, y, obj_player.x, o
 		wspeed = orig_wspeed;
 		ispeed = orig_ispeed;
 	}
+	
 	// Movement and animation
 	depth = -bbox_bottom;
 	direction = point_direction(x, y, obj_player.x, obj_player.y);
 	speed = wspeed;
 	image_speed = ispeed;	
 }
+// Too close
 else if (abs(point_distance(x, y, obj_player.x, obj_player.y)) < 20)
 {
 	// Stop movement and animation
