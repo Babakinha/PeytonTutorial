@@ -46,6 +46,9 @@ y += yspd;
 
 #endregion
 
+// Depth
+depth = -bbox_bottom
+
 // Fart
 if fart_check
 	audio_play_sound(snd_fart, 0, false)
