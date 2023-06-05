@@ -14,7 +14,9 @@
     {"name":"obj_boss","order":2,"path":"objects/obj_boss/obj_boss.yy",},
     {"name":"spr_boss_up","order":1,"path":"sprites/spr_boss_up/spr_boss_up.yy",},
     {"name":"spr_player_up","order":2,"path":"sprites/spr_player_up/spr_player_up.yy",},
+    {"name":"spr_plush","order":5,"path":"sprites/spr_plush/spr_plush.yy",},
     {"name":"spr_player_left","order":1,"path":"sprites/spr_player_left/spr_player_left.yy",},
+    {"name":"spr_bed","order":4,"path":"sprites/spr_bed/spr_bed.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
   ],
 }
